@@ -4,7 +4,8 @@
   "description": "게시판",
   "main": "index.js",
   "scripts": {
-    "start" : "node index.js"
+    "start": "node index.js",
+    "start:dev": "nodemon --watch index.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/sunrabbit123/NCS_-/issues"
   },
-  "homepage": "https://github.com/sunrabbit123/NCS_-#readme"
+  "homepage": "https://github.com/sunrabbit123/NCS_-#readme",
+  "dependencies": {
+    "yarn": "^1.22.10"
+  }
 }

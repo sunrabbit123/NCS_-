@@ -15,7 +15,7 @@ router.get('/add', async(_, res) => {
 
 // 게시판 읽기 창
 router.get('/read', async(req, res)=> {
-
+    
 });
 
 module.exports = router;

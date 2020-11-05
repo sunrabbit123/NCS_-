@@ -30,8 +30,6 @@ mongoose
         app.use(jwtMiddleware);
         app.use(express.urlencoded({ extended: true }));
         app.set('views', __dirname + '/views');
-        app.set('view engine', 'html');
-        app.engine('html', require('html').renderFile);
 
         //정적파일들의 경로를 public으로 향하게
         app.use(express.static('public'));

@@ -1,0 +1,32 @@
+/* header */
+header .wrap{
+    background-color: blue;
+    color: white;
+
+    display: flex;
+    justify-content: space-around;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+#logo img{
+    width: 5rem;
+    border-radius: 25%;
+}
+
+
+
+/* footer */
+footer .wrap{
+    background-color: blue;
+
+    text-decoration: None;
+    height: 2rem;
+}
+
+
+
+.wrap a{
+    text-decoration: none;
+    color:white;
+}

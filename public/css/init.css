@@ -1,0 +1,22 @@
+body{
+    box-sizing: border-box;
+}
+
+
+.wrap{
+    min-width: 1000px;
+    margin: 0 auto;
+
+
+}
+
+.full-width{
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+
+}
+
+li{
+    list-style: none;
+}

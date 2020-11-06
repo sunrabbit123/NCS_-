@@ -19,9 +19,11 @@ header .wrap{
 /* footer */
 footer .wrap{
     background-color: blue;
-
-    text-decoration: None;
+    
     height: 2rem;
+
+    text-align: center;
+    padding:1%
 }
 
 

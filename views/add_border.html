@@ -20,14 +20,14 @@
         </div>
     </header>
     <main>
-        <form>
+        <form action="/border" method="POST">
 
             <div id = "editor_header">
                 <input type = 'text' name='title' placeholder="제목">
                 <input type = 'text' name='writer' value = "익명" placeholder="작성자">
             </div>
             <div id="editor_main">
-                <input type = 'text' name='main' placeholder="내용을 입력해주세요">
+                <textarea rows="10" name='main' placeholder="내용을 입력해주세요">
             </div>
             <div>
                 <input type="submit" value="등록">

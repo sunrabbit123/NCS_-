@@ -10,7 +10,7 @@ router.get('/', async(_, res) =>{
 
 // 게시판 생성창
 router.get('/add', async(_, res) => {
-
+    res.render('add_border');
 });
 
 // 게시판 읽기 창

@@ -1,4 +1,8 @@
 /* header */
+header{
+    width: 100%;
+    position: fixed;
+}
 header .wrap{
     background-color: blue;
     color: white;
@@ -22,11 +26,18 @@ header .wrap ul li{
     padding-top: 1.7rem;
 }
 
-
+#blank_h{
+    height: 100px;
+    background-color: blue;
+}
 /* footer */
+footer{
+    width: 100%;
+    position: fixed;
+}
 footer .wrap{
     background-color: blue;
-    
+    color : white;
     height: 2rem;
 
     text-align: center;

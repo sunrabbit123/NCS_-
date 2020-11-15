@@ -1,0 +1,33 @@
+main{
+    display: flex;
+    width: 100%;
+}
+#blank_w{
+    width: 30%;
+}
+
+main{
+    background-color: blue;
+}
+form{
+    background-color: white;
+    padding-left : 10rem;
+    padding-right: 10rem;
+    box-sizing: border-box;
+    border-radius: 2rem;
+}
+#input_border{
+    margin : 0 auto;
+    padding-top: 10rem;
+}
+#input_border input{
+    margin : 1rem;
+    margin-left: 0;
+}
+
+#editor_header{
+    display: flex;
+}
+#editor_main{
+    width: 100;
+}

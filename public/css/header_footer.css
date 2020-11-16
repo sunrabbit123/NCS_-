@@ -18,7 +18,9 @@ header .wrap{
     margin-left: 100%;
     
 }
-
+header .wrap ul{
+    display: flex;
+}
 header .wrap ul li{
     font-size: 1.5rem;
     margin-right: 4rem;

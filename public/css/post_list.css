@@ -1,0 +1,38 @@
+.find_post{
+    box-sizing: border-box;
+    border: 1px solid lightblue;
+}
+
+.find_post h2{
+    font-size: 3rem;
+    text-align: center;
+}
+
+.find_post ol #posts{
+    display: flex;
+    margin: 0 auto;
+    box-sizing: border-box;
+    border: 1px solid lightblue;
+    padding : 1rem;
+}
+
+.find_post ol #posts #head{
+    box-sizing: border-box;
+    
+}
+
+
+#head {
+    width : 40%;
+    text-align: center;
+}
+
+#head .title{
+    font-size: 1.5rem;
+    padding-bottom : 0.5rem;
+}
+#head .semi_title{
+    font-size: 0.75rem;
+    display: block;
+}
+

@@ -1,6 +1,11 @@
 .find_post{
+    position: absolute;
+    float: none;
     box-sizing: border-box;
     border: 1px solid lightblue;
+    line-height: normal;
+    overflow: visible;
+    width: 400px;
 }
 
 .find_post h2{

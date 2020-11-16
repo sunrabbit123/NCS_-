@@ -37,9 +37,7 @@ router.get('/', async (req, res) => {
             description : '대충 내용'
         },
 
-    ],
-    page : parseInt(req.query.page || 1),
-    postCnt : 1
+    ]
     };
     
     res.render('index', posts);

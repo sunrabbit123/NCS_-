@@ -5,12 +5,10 @@ const {
 } = mongoose;
 
 const Post = new Schema({
-    category : String,
     title : String,
-    description : String,
-    Publisher : String,
-    atDate : Date,
-    img : String
+    publisher : String,
+    created_at : Date,
+    description : String
 });
 
 Post.statics.findPostAt_id = function( { _id } ){

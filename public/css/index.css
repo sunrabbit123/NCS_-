@@ -1,11 +1,10 @@
-main {
-    display: flex;
-}
-
 aside{
-    width: 30%;
+    top:90px;
+    left:0;
 }
-
 article {
-    width: 70%
+    position: absolute;
+    left: 402px;
+    width: auto;
+    float: right;
 }

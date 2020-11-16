@@ -2,12 +2,10 @@ main{
     display: flex;
     width: 100%;
 }
-#blank_w{
-    width: 30%;
-}
 
 main{
     background-color: blue;
+    width: 0 auto;
 }
 form{
     background-color: white;

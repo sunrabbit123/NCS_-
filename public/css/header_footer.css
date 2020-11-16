@@ -1,52 +1,64 @@
 /* header */
 header{
-    width: 100%;
-}
-header .wrap{
+    display : block;
+    top:0;
+    height: 90px;
     background-color: blue;
     color: white;
-
-    display: flex;
-    justify-content: space-between;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    position: relative;
 }
+    
 
-#logo img{
+header h1{
+    display: block;
+    position: absolute;
+    width: 5rem;
+    
+}
+#logo a img{
     width: 5rem;
     border-radius: 25%;
     margin-left: 100%;
+    padding-top: 0.3rem;
+
     
 }
-header .wrap ul{
+header ul{
     display: flex;
+    position: absolute;
+    white-space: nowrap;   
+    right: 0;
+    top : 0;
+    width: auto; 
 }
-header .wrap ul li{
+
+header ul li{
     font-size: 1.5rem;
     margin-right: 4rem;
     padding-top: 1.7rem;
 }
 
-#blank_h{
-    height: 100px;
-    background-color: blue;
-}
 /* footer */
 footer{
     width: 100%;
-}
-footer .wrap{
+    position: relative;
+    bottom: 0;
+    display : block;
     background-color: blue;
     color : white;
-    height: 2rem;
-
-    text-align: center;
-    padding:1%
+    height: 50px;
+    padding-bottom:1%;
 }
 
 
 
-.wrap a{
+footer a{
     text-decoration: none;
     color:white;
+    height: 2rem;
+    width : 0 auto;
+    
+    display : block;
+    position : absolute;
+    right : 10px;
 }

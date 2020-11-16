@@ -6,8 +6,6 @@ body{
 .wrap{
     min-width: 1000px;
     margin: 0 auto;
-
-
 }
 
 .full-width{
@@ -19,4 +17,10 @@ body{
 
 li{
     list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    
 }

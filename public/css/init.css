@@ -6,7 +6,6 @@ body{
    
 }
 
-
 .wrap{
     min-width: 1000px;
     margin: 0 auto;
@@ -25,7 +24,7 @@ li{
 
 a{
     text-decoration: none;
-    color: white;
+    color: black;
 
 }
 main{

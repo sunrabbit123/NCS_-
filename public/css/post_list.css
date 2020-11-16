@@ -5,40 +5,107 @@
     overflow: visible;
     width: 800px;
     margin : 0 auto;
-
-    
-
-
-}
-
-aside{
-
 }
 
 
-.find_post ol #posts{
+.find_post ol .posts{
     display: block;
     margin: 0 auto;
     box-sizing: border-box;
     border: 1px solid lightblue;
-    padding : 1rem;
+    margin : 2rem;
 }
 
-.find_post ol #posts #head{
+.find_post ol .posts .head{
     box-sizing: border-box;
 }
 
+ol .post_article{
+    width: 1000px;
+    height: 196px;
+    margin : 0 auto;
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: animation_up;
+    padding: 0;
+    display: block;
+    transition: opacity 0.2s ease-out 0s, transform 0.5s ease-out 0s;
 
-#head {
-    width : 40%;
-    text-align: center;
+}
+.posts{
+    
+    float: right;
+    position: relative;
+    width: 700px;
+    height: 146px;
+    margin-right: 150px;
+    cursor: pointer;
 }
 
-#head .title{
-    font-size: 1.5rem;
-    padding-bottom : 0.5rem;
+.tit_chap{
+    word-break: break-all;
+    display: block;
+    float : left;
+    width: 96px;
+    height: 89px;
+    padding: 13px 0 0;
+    margin : 51px 0 0;
+    border-top: 1px solid #9B9B9B;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    color: #333;
+    text-rendering: inherit;
 }
-#head .semi_title{
+.posts li .wrap_cont{
+    overflow:hidden;
+    padding : 0 0 0 50px;
+    margin : 0;
+    display: block;
+}
+
+.posts li .page_num{
+    top: -1px;
+    position: absolute;
+    left:0;
+    width:50px;
+    font-size: 20px;
+    line-height: 29px;
+    font-style: normal;
+    font-weight: normal;
+
+
+}
+
+.posts li div .tit_post{
+    display:block;
+    overflow: hidden;
+    width: 100%;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: -1px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    top:0;
+}
+.posts li div .description{
+    overflow:hidden;
+    padding: 8px 0 0;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    color: #959595;
+    letter-spacing: -1px;
+    padding-top: 4px;
+}
+.posts li .semi_title{
     font-size: 0.75rem;
     display: block;
 }

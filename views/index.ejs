@@ -16,24 +16,31 @@
 
         <main>
             <div class='picture'>
-                <img src="/img/unsplash.jpg" alt="img">
+                <img src="/image/unsplash.jpg" alt="img">
             </div>
-            <aside class="find_post" style="width:400px;">
+            <aside class="find_post">
                 <ol>
                     <% for(const post of posts) { %>
-                        <li id = 'posts'>
-
-                            <div id = 'head'> 
-                                <h2 class = 'title' name = 'title'><%= post.title %></h2>
-                                <ol class = 'semi_title'>
-                                    <li class = 'publisher' name='publisher'>작성자 : <%= post.publisher %></li>
-                                    <li class = 'created_at' name = 'created_at'>게시일 : <%= post.created_at %></li>
-                                </ol>
-                            </div>
-
-                            <span class = 'description' name = 'description'><%= post.description %></span>
-                            
-                        </li>
+                        <div class='post_article'>
+                            <% if(post.mini_title) { %>
+                                <strong class='tit_chap'><%= post.mini_title %></strong>
+                            <% } %>
+                            <a href="/border?id=<%= post.id %>" class = 'posts'>
+                                <li>
+                                    <em class = 'page_num'><%= post.id %></em>
+                                    <div class='wrap_cont'>
+                                        <strong class = 'tit_post' name = 'title'><%= post.title %></strong>
+                                        <span class = 'description' name = 'description'><%= post.description %></span>
+                                        
+                                    </div>
+                                    <ol class = 'semi_title'>
+                                        <li class = 'publisher' name='publisher'>작성자 : <%= post.publisher %></li>
+                                        <li class = 'created_at' name = 'created_at'>게시일 : <%= post.created_at %></li>
+                                    </ol>
+                                    
+                                </li>
+                            </a>
+                        </div>
                     <% } %>
                 </ol>
             </aside>

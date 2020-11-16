@@ -20,9 +20,10 @@
                 <input type = 'text' name='writer' value = "익명" placeholder="작성자">
             </div>
             <div id="editor_main">
+                <input type='file' name='upload' value='메인사진'/>
                 <textarea rows="40" cols = "50" name='main' placeholder="내용을 입력해주세요"></textarea>
             </div>
-            <button type="submit">등록</button>
+            <button type="submit" class='btn'>등록</button>
         </form>
     </main>
         <%- include('partials/footer') %>

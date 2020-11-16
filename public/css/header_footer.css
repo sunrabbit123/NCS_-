@@ -1,7 +1,6 @@
 /* header */
 header{
     width: 100%;
-    position: fixed;
 }
 header .wrap{
     background-color: blue;
@@ -33,7 +32,6 @@ header .wrap ul li{
 /* footer */
 footer{
     width: 100%;
-    position: fixed;
 }
 footer .wrap{
     background-color: blue;

@@ -25,13 +25,13 @@ mongoose
         console.log('Successfully connected to mongodb');
 
         //express 기본 세팅
-        app.use(express.json());
-        app.use(cookieParser());
-        app.use(jwtMiddleware);
-        app.use(express.urlencoded({ extended: true }));
-        app.set('views', __dirname + '/views');
-        app.engine('html', require('ejs').renderFile);
-        app.set('view engine', 'html');
+        app.use(express.json())
+        .use(cookieParser())
+        .use(jwtMiddleware)
+        .use(express.urlencoded({ extended: true }))
+        .engine('html', require('ejs').renderFile)
+        .set('views', __dirname + '/views')
+        .set('view engine', 'ejs');
 
         //정적파일들의 경로를 public으로 향하게
         app.use(express.static('public'));

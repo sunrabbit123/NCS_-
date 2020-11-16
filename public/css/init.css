@@ -1,5 +1,9 @@
 body{
-    box-sizing: border-box;
+    background: #fff;
+    color: #333;
+    font-size: 14px;
+    line-height: 1.5;
+   
 }
 
 
@@ -22,5 +26,9 @@ li{
 a{
     text-decoration: none;
     color: white;
-    
+
+}
+main{
+    padding-top:91px;
+
 }

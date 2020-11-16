@@ -1,12 +1,9 @@
 main{
     display: flex;
     width: 100%;
-}
-
-main{
-    background-color: blue;
     width: 0 auto;
 }
+
 form{
     background-color: white;
     padding-left : 10rem;
@@ -16,7 +13,7 @@ form{
 }
 #input_border{
     margin : 0 auto;
-    padding-top: 10rem;
+    padding-top: 5rem;
 }
 #input_border input{
     margin : 1rem;
@@ -28,4 +25,24 @@ form{
 }
 #editor_main{
     width: 100;
+}
+textarea{
+    width:100%;
+
+}
+button{
+    background-color: blue;
+    color: white;
+    border-radius: 0.2rem;
+
+    width:100%;
+    margin-top:1rem;
+    margin-bottom:1rem;
+
+
+
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+
 }

@@ -3,9 +3,11 @@ header{
     display : block;
     top:0;
     height: 90px;
-    background-color: blue;
-    color: white;
-    position: relative;
+    color: black;
+    position: fixed;
+    border-bottom: 1px solid #ddd;
+    background: rgba(255, 255, 255, 0.95);
+    z-index: 10;
 }
     
 
@@ -13,23 +15,21 @@ header h1{
     display: block;
     position: absolute;
     width: 5rem;
-    
 }
 #logo a img{
     width: 5rem;
     border-radius: 25%;
     margin-left: 100%;
     padding-top: 0.3rem;
-
     
 }
 header ul{
     display: flex;
     position: absolute;
-    white-space: nowrap;   
-    right: 0;
+    white-space: nowrap;
     top : 0;
-    width: auto; 
+    right:0;
+
 }
 
 header ul li{
@@ -44,21 +44,16 @@ footer{
     position: relative;
     bottom: 0;
     display : block;
-    background-color: blue;
-    color : white;
-    height: 50px;
-    padding-bottom:1%;
 }
 
 
 
 footer a{
+    
     text-decoration: none;
     color:white;
-    height: 2rem;
-    width : 0 auto;
-    
-    display : block;
     position : absolute;
-    right : 10px;
+    width: 100px;
+    margin : 0 auto;
+    top : 15px;
 }

@@ -1,20 +1,23 @@
 .find_post{
-    position: absolute;
+    position: block;
     float: none;
-    box-sizing: border-box;
-    border: 1px solid lightblue;
     line-height: normal;
     overflow: visible;
-    width: 400px;
+    width: 800px;
+    margin : 0 auto;
+
+    
+
+
 }
 
-.find_post h2{
-    font-size: 3rem;
-    text-align: center;
+aside{
+
 }
+
 
 .find_post ol #posts{
-    display: flex;
+    display: block;
     margin: 0 auto;
     box-sizing: border-box;
     border: 1px solid lightblue;
@@ -23,7 +26,6 @@
 
 .find_post ol #posts #head{
     box-sizing: border-box;
-    
 }
 
 

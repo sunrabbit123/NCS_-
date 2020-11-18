@@ -20,7 +20,7 @@ Post.statics.findPostAt_id = function( { _id } ){
         _id
     });
 };
-Post.statics.findAlli = function(){
+Post.statics.findAll = function(){
     return this.find();
     
 }
@@ -38,5 +38,5 @@ Post.statics.newPost = function({
     });
     return posts.save();
 }
-exports.module = mongoose.model('Post', Post);
+module.exports = mongoose.model('Post', Post);
 

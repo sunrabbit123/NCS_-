@@ -15,14 +15,19 @@
         <div id = "blank_w"></div>
         <form id = "input_border" action="/border" method="POST">
 
-            <div id = "editor_header">
-                <input type = 'text' name='title' placeholder="제목">
-                <input type = 'text' name='writer' value = "익명" placeholder="작성자">
-            </div>
-            <div id="editor_main">
-                <input type='file' name='upload' value='메인사진'/>
-                <textarea rows="40" cols = "50" name='main' placeholder="내용을 입력해주세요"></textarea>
-            </div>
+                <div id='write_bline'>
+                    <div id='editor_header'>
+                        <h1><input type = 'text' name='title' placeholder="제목을 입력하세요"></h1>
+                        <input type = 'text' name='mini_title' id = 'chap' placeholder="챕터 표기를 원할 시 입력하세요">
+                        <input type = 'text' name='publisher' id='writer' placeholder="작성자를 입력하세요">
+                        <div class="filebox"> 
+                            <label for="file">대표 사진 선택</label> 
+                            <input type="file" id="file" accept='image/*'> 
+                          </div>
+                    </div>
+                </div>
+                <textarea rows="40" cols = "50" name='description' placeholder="내용을 입력해주세요"></textarea>
+            
             <button type="submit" class='btn'>등록</button>
         </form>
     </main>

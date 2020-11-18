@@ -1,6 +1,7 @@
 const express = require('express');
 const multer = require('multer');
-const posts = require('../../models/Post')
+const Post = require('../../models/Post')
+
 var storage = multer.diskStorage({
     destination: function (req, file, cb) {
       cb(null,'./public/image') // cb 콜백함수를 통해 전송된 파일 저장 디렉토리 설정
@@ -18,11 +19,10 @@ const router = express.Router();
 
 // 게시판 생성 리다이렉트
 router.post('/', upload.single('img'), async(req, res) =>{
-    const { mini_title, picturePath, title, publisher, description } = req.body;
-    res.json(req.file);
+    console.log(Post);
+    const pst = await Post.newPost(req.body); 
 
-
-    
+    res.redirect('/');
 });
 
 // 게시판 생성창

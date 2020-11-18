@@ -12,48 +12,136 @@ form{
     border-radius: 2rem;
 }
 #input_border{
-    margin : 0 auto;
+    padding:0;
     padding-top: 5rem;
-}
-#input_border input{
-    margin : 1rem;
-    margin-left: 0;
+    width: 100%;
 }
 
 #editor_header{
-    display: flex;
+    
+    outline: transparent solid 0;
+    max-height: none;
+    width:40%;
+    margin: 0 auto;
 }
-#editor_main{
-    width: 100;
+#write_bline{
+    border-bottom: 1px solid #eee;
+    width: 100%;
+   
+}
+input[type=text]{
+    width: 100%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: none;
+    font-size: 2rem;
+}
+input[type=text]:focus{
+    border: none;
 }
 textarea{
-    width:100%;
-
+    display: block;
+    width: 40%;
+    border:none;
+    margin:0 auto;
+    margin-top: 5rem;
+    font:inherit;
+    padding: 12px 20px;
+    resize: none;
 }
+#chap{
+    width:49%;
+    font-size: 1rem;
+    display:block;
+    left: 0;
+}
+#writer{
+    width:49%;
+    font-size: 0.8rem;
+    display: block;
+    left: 0;
+}
+.filebox{
+    right: 0;
+    width: 49%;
+    margin-bottom: 2rem;
+}
+.filebox input[type="file"] {
+    position: absolute;
+    width: 0;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    }
+    
+    .filebox label {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #999;
+    vertical-align: middle;
+    background-color: #fdfdfd;
+    cursor: pointer;
+    border: 1px solid #ebebeb;
+    border-radius: 5px;
+    }
+    
+    /* named upload */
+    .filebox .upload-name {
+    display: inline-block;
+      height: 35px;
+      font-size:18px; 
+      padding: 0 10px;
+    vertical-align: middle;
+    background-color: #f5f5f5;
+      border: 1px solid #ebebeb;
+      border-radius: 5px;
+    
+    }
 .btn{
-    background-color:#2ea44f;
+    appearance: button;
+    right: 0;
+    top: 120px;
+    border : 1px solid #bbb;
+    border-radius: 15px;
+    margin-right: 5px;
+    color : #666;
+    width: 66px;
+    height: 30px;
+
+    background-color : #fff;
+    box-sizing: border-box;
     border-color: rgba(27,31,35,0,15);
     box-shadow: 0 1px 0 rgba(27,31,35,0,1);
-    color: white;
+    outline : 0;
+    padding: 0;
+    margin : 0;
+    margin-right: 120px;
 
-    position: relative;
-    display: inline-block;
-    padding: 5px 16px;
-
-    font-weight: 500;
-    line-height: 20px;
-    white-space: nowrap;
-    vertical-align: middle;
-    cursor: pointer;
-    
-    
-    border-radius: 6px;
-    border: 1px solid;
-    appearance: none;
+    position: fixed;
+    display: block;
     text-align: center;
     align-items: flex-start;
 
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 25px;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    backface-visibility: hidden;
+    
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
 
-    width: 30%;
+    
+
+
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+
 
 }

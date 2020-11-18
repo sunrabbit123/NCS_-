@@ -36,7 +36,8 @@
                                     </div>
                                     <ol class = 'semi_title'>
                                         <li class = 'publisher' name='publisher'>작성자 : <%= post.publisher %></li>
-                                        <li class = 'created_at' name = 'created_at'>게시일 : <%= post.created_at %></li>
+                                        <% var created_at = String(post.created_at.getFullYear()) + "년 "+ String(post.created_at.getMonth()+1) + "월 " + String(post.created_at.getDate()) + "일"; %>
+                                        <li class = 'created_at' name = 'created_at'><img src="/image/stopwatch.png" alt="게시일"> <%= created_at %></li>
                                     </ol>
                                     
                                 </li>

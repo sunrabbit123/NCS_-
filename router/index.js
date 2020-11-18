@@ -1,11 +1,11 @@
 const express = require('express');
-
+const Post = require('../models/Post');
 const router = express.Router();
 
 router.use('/border', require('./border'));
 
 router.get('/', async (req, res) => {
-    posts = {
+    const posts1 = {
         posts: [{
             mini_title : '대충 챕터 1',
             title: '대충 제목',
@@ -102,7 +102,7 @@ router.get('/', async (req, res) => {
 
     ]
     };
-    
+    const posts = { posts : await Post.findAll()};
     res.render('index', posts);
 });
 

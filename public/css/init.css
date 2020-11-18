@@ -40,3 +40,9 @@ p{
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
+input:-internal-autofill-selected{
+    appearance: none; 
+    background-color: none;
+    background-image: none;
+    color:none;
+}

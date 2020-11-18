@@ -13,13 +13,12 @@ const Post = new Schema({
         type: Date,
         default : Date.now
     },
-    description : String
+    description : String,
+    picturePath : String
 });
 
 Post.statics.findPostAt_id = function( id ){
     const o_id = String(id);
-    console.log(id);
-    console.log(o_id);
     return this.findById(o_id);
 };
 Post.statics.findAll = function(){
@@ -31,12 +30,13 @@ Post.statics.newPost = function({
     title,
     publisher,
     description
-}){
+}, Path){
     const posts = new this({
         mini_title,
         title,
         publisher,
-        description
+        description,
+        picturePath : Path
     });
     return posts.save();
 }

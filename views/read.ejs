@@ -14,7 +14,7 @@
     <%- include('partials/header') %>
     <div id="h90"></div>
     <article class="wrap_cover">
-        <div class="cover-image" style="background-image: url(/image/black.jpeg);"></div>
+        <div class="cover-image" style="background-image: url(<%= post.picturePath %>);"></div>
         <div class="cover-inner"></div>
         <div class="title">
             <h1 class="title_h"><%= post.title %></h1>

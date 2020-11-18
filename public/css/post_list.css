@@ -82,6 +82,11 @@ ol .post_article{
     margin-top: -46px;
     padding:0;
 }
+.wrap_thumb img{
+    width:120px;
+    max-height: 120px;
+
+}
 .posts li div .tit_post{
     display:block;
     overflow: hidden;
@@ -94,6 +99,7 @@ ol .post_article{
     text-overflow: ellipsis;
     top:0;
 }
+
 .posts li div .description{
     overflow:hidden;
     padding: 8px 0 0;
@@ -126,4 +132,3 @@ li img{
     margin-right: 3px;
     width: 12px;
 }
-

@@ -13,7 +13,7 @@
         <%- include('partials/header') %>
     <main>
         <div id = "blank_w"></div>
-        <form id = "input_border" action="/border" method="POST">
+        <form id = "input_border" action="/border" method="POST" enctype="multipart/form-data">
 
                 <div id='write_bline'>
                     <div id='editor_header'>
@@ -22,7 +22,7 @@
                         <input type = 'text' name='publisher' id='writer' placeholder="작성자를 입력하세요">
                         <div class="filebox"> 
                             <label for="file">대표 사진 선택</label> 
-                            <input type="file" id="file" accept='image/*'> 
+                            <input type="file" id="file" name='img' accept='image/*'> 
                           </div>
                     </div>
                 </div>

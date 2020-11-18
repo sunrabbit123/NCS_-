@@ -19,15 +19,16 @@
                 <img src="/image/unsplash.jpg" alt="img">
             </div>
             <aside class="find_post">
-                <ol>
+                <ol><% var i = 0; %>
                     <% for(const post of posts) { %>
                         <div class='post_article'>
+                            <% i += 1; %>
                             <% if(post.mini_title) { %>
                                 <strong class='tit_chap'><%= post.mini_title %></strong>
                             <% } %>
                             <a href="/border?id=<%= post.id %>" class = 'posts'>
                                 <li>
-                                    <em class = 'page_num'><%= post.id %></em>
+                                    <em class = 'page_num'><%= i %></em>
                                     <div class='wrap_cont'>
                                         <strong class = 'tit_post' name = 'title'><%= post.title %></strong>
                                         <span class = 'description' name = 'description'><%= post.description %></span>
@@ -47,6 +48,6 @@
         </main>
         <%- include('partials/footer') %>
     </div>
-
+    
 </body>
 </html>

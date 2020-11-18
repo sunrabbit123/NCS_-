@@ -5,9 +5,13 @@ const {
 } = mongoose;
 
 const Post = new Schema({
+    mini_title : String,
     title : String,
     publisher : String,
-    created_at : Date,
+    created_at : {
+        type: Date,
+        default : Date.now
+    },
     description : String
 });
 
@@ -16,6 +20,23 @@ Post.statics.findPostAt_id = function( { _id } ){
         _id
     });
 };
-
+Post.statics.findAlli = function(){
+    return this.find();
+    
+}
+Post.statics.newPost = function({
+    mini_title = '',
+    title,
+    publisher,
+    description
+}){
+    const posts = new this({
+        mini_title,
+        title,
+        publisher,
+        description
+    });
+    return posts.save();
+}
 exports.module = mongoose.model('Post', Post);
 

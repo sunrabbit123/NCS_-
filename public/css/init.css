@@ -3,8 +3,10 @@ body{
     color: #333;
     font-size: 14px;
     line-height: 1.5;
-   
+    font-family: "Noto Sans Light","Malgun Gothic",sans-serif;
+
 }
+
 
 .wrap{
     min-width: 1000px;
@@ -30,4 +32,11 @@ a{
 main{
     padding-top:91px;
 
+}
+p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }

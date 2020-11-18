@@ -8,18 +8,6 @@
 }
 
 
-.find_post ol .posts{
-    display: block;
-    margin: 0 auto;
-    box-sizing: border-box;
-    border: 1px solid lightblue;
-    margin : 2rem;
-}
-
-.find_post ol .posts .head{
-    box-sizing: border-box;
-}
-
 ol .post_article{
     width: 1000px;
     height: 196px;
@@ -35,16 +23,17 @@ ol .post_article{
     padding: 0;
     display: block;
     transition: opacity 0.2s ease-out 0s, transform 0.5s ease-out 0s;
-
+    
 }
 .posts{
-    
     float: right;
     position: relative;
     width: 700px;
     height: 146px;
+    margin-top: 49px;
     margin-right: 150px;
     cursor: pointer;
+    display: block;
 }
 
 .tit_chap{
@@ -55,6 +44,7 @@ ol .post_article{
     height: 89px;
     padding: 13px 0 0;
     margin : 51px 0 0;
+    
     border-top: 1px solid #9B9B9B;
     font-weight: 400;
     font-size: 13px;
@@ -67,6 +57,7 @@ ol .post_article{
     padding : 0 0 0 50px;
     margin : 0;
     display: block;
+    width: 70%;
 }
 
 .posts li .page_num{
@@ -81,7 +72,16 @@ ol .post_article{
 
 
 }
-
+.posts li .wrap_thumb{
+    float: right;
+    overflow: hidden;
+    width:120px;
+    height: 120px;
+    padding-left:30px;
+    margin:0;
+    margin-top: -46px;
+    padding:0;
+}
 .posts li div .tit_post{
     display:block;
     overflow: hidden;
@@ -114,7 +114,7 @@ ol .post_article{
     padding:0;
     margin-inline-start: 48px;
     display: block;
-    margin-top : 10px;
+    margin-top : 20px;
 }
 .posts li ol li{
     display: flex;

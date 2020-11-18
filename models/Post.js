@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const ObjectId = require('mongoose').ObjectId;
 
 const {
     Schema
@@ -15,10 +16,11 @@ const Post = new Schema({
     description : String
 });
 
-Post.statics.findPostAt_id = function( { _id } ){
-    return this.findOne({
-        _id
-    });
+Post.statics.findPostAt_id = function( id ){
+    const o_id = String(id);
+    console.log(id);
+    console.log(o_id);
+    return this.findById(o_id);
 };
 Post.statics.findAll = function(){
     return this.find();

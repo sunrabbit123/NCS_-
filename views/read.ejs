@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <link rel="stylesheet" href="/css/init.css">
+    <link rel="stylesheet" href="/css/header_footer.css">
+    <link rel="stylesheet" href="/css/read.css">
+    <title>border</title>
+</head>
+<body>
+    
+
+    
+    <%- include('partials/header') %>
+    <div id="h90"></div>
+    <article class="wrap_cover">
+        <div class="cover-image" style="background-image: url(/image/black.jpeg);"></div>
+        <div class="cover-inner"></div>
+        <div class="title">
+            <h1 class="title_h"><%= post.title %></h1>
+        </div>
+        <div class id="wrapArtist" t-area="Writer">
+            <span class="f_l by">by</span>
+            <span class="f_l author"><%= post.publisher %></span>
+            <span class="f_l dot_middle"></span>
+            <span class="f_l date"><%= post.created_at %></span>
+        </div>
+    </article>
+    
+    <main id = 'main' style="margin-top: 450px;">
+        <div class='description'>
+            <p><%= post.description %></p>
+        </div>
+    </main>
+    <%- include('partials/footer') %>
+</body>
+</html>

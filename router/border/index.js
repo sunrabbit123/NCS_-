@@ -32,7 +32,9 @@ router.get('/add', async(_, res) => {
 
 // 게시판 읽기 창
 router.get('/read', async(req, res)=> {
-    
+    const contents = { post : await Post.findPostAt_id(req.query.id)};
+    console.log(contents);
+    res.render('read', contents);
 });
 
 module.exports = router;

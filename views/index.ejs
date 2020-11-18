@@ -26,12 +26,15 @@
                             <% if(post.mini_title) { %>
                                 <strong class='tit_chap'><%= post.mini_title %></strong>
                             <% } %>
-                            <a href="/border?id=<%= post.id %>" class = 'posts'>
+                            <a href="/border/read?id=<%= post._id %>" class = 'posts'>
                                 <li>
-                                    <em class = 'page_num'><%= i %></em>
+                                    <em class = 'page_num'><%= i < 9 ? '0'+'' + i : i %></em>
                                     <div class='wrap_cont'>
                                         <strong class = 'tit_post' name = 'title'><%= post.title %></strong>
                                         <span class = 'description' name = 'description'><%= post.description %></span>
+                                        
+                                    </div>
+                                    <div class = "wrap_thumb">
                                         
                                     </div>
                                     <ol class = 'semi_title'>

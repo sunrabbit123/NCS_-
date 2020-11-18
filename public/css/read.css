@@ -1,0 +1,161 @@
+.wrap_cover{
+    position: fixed;
+    width: 100%;
+    top:90px;
+    
+    backface-visibility: hidden;
+    display: block;
+    word-break: break-word;
+
+    font-size:14px;
+    line-height: 1.5;
+
+   
+}
+.cover-image{
+    display: block;
+
+    background-size:cover;
+    background-position: 50% 50%;
+
+ 
+    height: 450px;
+
+
+}
+.cover-inner{
+    display: block;
+    background-color: #000;
+    opacity: .3;
+    height: 450px;
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    
+}
+#h90{
+    height: 90px;
+    width: 100%;
+    top:0;
+
+}
+.title{
+    position: absolute;
+    width: 700px;
+    display: block;
+    text-align: left;
+    z-index: 11;
+    margin:0 auto;
+    word-break: break-word;
+    left:50%;
+    transform : translate(-50%, -50%);
+    bottom: 62px;
+}
+
+.title_h{
+    margin-left: 0;
+    letter-spacing: -.01em;
+    font-size: 34pt;
+    font-family: 'Nanum Myeongjo';
+    color: #fff;
+
+    line-height: 40pt;
+    font-weight: 400;
+    backface-visibility: hidden;
+    display: block;
+    margin-block-start: 0.67em;
+    margin-block-end:0.67em;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    text-align: left;
+    word-break: break-word;
+
+}
+
+#wrapArtist{
+    position: absolute;
+    display: block;
+    bottom:27px;
+    width: 700px;
+    left: 50%;
+    font-size : 12px;
+    word-break: break-word;
+    line-height: 1.5;
+    
+    transform: translate(-50%, -50%)
+
+}
+.by{
+    display: inline-block;
+    width: 15px;
+    height: 14px;
+    margin: 0 4px 0 0;
+    font-family: Georgia,sans-serif;
+    font-style: italic;
+    color: #fff;
+    font-size: 12px;
+    opacity: .5;
+
+    margin-right: 2px;
+
+}
+.author{
+    opacity: .8;
+    color: #fff;
+    font-size: 12px;
+    letter-spacing: -.05em;
+}
+.f_l{
+    float: left;
+}
+.dot_middle{
+    margin: 8px 7px 0;
+    opacity: .5;
+    display: inline-block;
+    width: 2px;
+    height: 2px;
+    background-color: #fff;
+    vertical-align: top;
+    word-break:break-word;
+
+}
+
+#main{
+    padding-top: 0;
+
+}
+.description{
+    margin-bottom: -5px;
+    overflow: hidden;
+    background: #fff;
+    z-index: 10;
+    position: relative;
+    padding-bottom: 0;
+    padding-top:40px;
+    display: block;
+    font-size: 11px;
+    line-height: 22pt;
+    word-break: break-word;
+
+
+}
+
+.description p{
+    margin-top: -7px;
+    min-width: 620px;
+    width:700px;
+
+    text-align: left;
+    letter-spacing: .8px;
+    word-break: break-word;
+    color:#333;
+    margin: 0 auto;
+}
+
+.date{
+    letter-spacing: -.05em;
+    color:#fff;
+    opacity: .5;
+    font-size:12px;
+}
